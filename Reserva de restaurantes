@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Savory Reservations V'U</title>
+</head>
+<body>
+
+    <h1>🍽️ Savory Reservations</h1>
+    <h2>Realizar una Nueva Reserva</h2>
+
+    <div>
+        <input id="inputNombre" type="text" placeholder="Nombre del Cliente" required>
+        <input id="inputPersonas" type="number" placeholder="Personas" min="1" value="2" required>
+        <input id="inputFecha" type="datetime-local" required>
+        
+        <button id="btnReservar">Reservar Mesa</button>
+    </div>
+
+    <hr>
+
+    <h2>Reservas Pendientes</h2>
+    
+    <ul id="listaReservas">
+        </ul>
+
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-database-compat.js"></script>
+    
+    <script src="app.js"></script>
+
+</body>
+</html>
